@@ -1,21 +1,39 @@
 {
-    "compilerOptions": {
-        "outDir": "./built/",
-        "sourceMap": true,
-        "strict": true,
-        "module": "es2015",
-        "moduleResolution": "node",
-        "target": "es5",
-        "skipLibCheck": true,
-        "esModuleInterop": true,
-        "experimentalDecorators": true
-    },
-    "include": [
-        "./src/**/*"
+  "compilerOptions": {
+    "outDir": "./built/",
+    "sourceMap": true,
+    "strict": true,
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "target": "es5",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "types": [
+      "node",
+      "jest"
     ],
-    "paths": {
-      "@/*": [
-        "src/*"
-      ]
-    }
+    "lib": [
+      "DOM",
+      "ES2015"
+    ],
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "emitDecoratorMetadata": true,
+    "baseUrl": ".",
+    "noImplicitAny": false
+  },
+  "include": [
+    "./src/**/*"
+  ],
+  "paths": {
+    "@/*": [
+      "src/*"
+    ]
+  }
 }
